@@ -93,3 +93,27 @@ main {
     padding: 5px;
     font-weight: bold;
 }
+
+.completoCadastro {
+    border-top: 2px solid rgb(73, 63, 50);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(99, 88, 74);
+    padding: 15px;
+}
+
+.completoCadastro button {
+    font-size: 20px;
+    padding: 10px;
+    font-weight: bold;
+    background-color: rgb(151, 146, 140);
+    border-radius: 10px;
+    border: 2px solid rgb(73, 63, 50);
+    cursor: pointer;
+}
+
+.completoCadastro button:hover {
+    transition: 0.5s;
+    background-color: rgb(128, 117, 104);
+}
