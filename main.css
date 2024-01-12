@@ -5,6 +5,12 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
 header{
     padding: 20px;
     text-align: center;
@@ -61,7 +67,7 @@ main {
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     padding: 5px;
-    
+    outline: 0;
 }
 
 .enderecoCadastro{
@@ -107,7 +113,7 @@ main {
     font-size: 20px;
     padding: 10px;
     font-weight: bold;
-    background-color: rgb(151, 146, 140);
+    background-color: rgb(156, 132, 103);
     border-radius: 10px;
     border: 2px solid rgb(73, 63, 50);
     cursor: pointer;
@@ -115,5 +121,5 @@ main {
 
 .completoCadastro button:hover {
     transition: 0.5s;
-    background-color: rgb(128, 117, 104);
+    background-color: rgb(107, 80, 50);
 }

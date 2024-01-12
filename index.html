@@ -44,22 +44,22 @@
 
             <div class="padrao">
                 <p>Estado:</p>
-                <input type="text" id="estado">
+                <input type="text" id="estadoCadastro">
             </div>
 
             <div class="padrao">
                 <p>Cidade:</p>
-                <input type="text" id="cidade">
+                <input type="text" id="cidadeCadastro">
             </div>
 
             <div class="padrao">
                 <p>Bairro:</p>
-                <input type="text" id="bairro">
+                <input type="text" id="bairroCadastro">
             </div>
 
             <div class="padrao">
                 <p>Rua:</p>
-                <input type="text" id="rua">
+                <input type="text" id="ruaCadastro">
             </div>
 
         </div>
@@ -91,9 +91,11 @@
         </div>
 
         <div class="completoCadastro">
-            <button type="submit">Cadastrar Funcionario</button>
+            <button type="submit" id="enviar" onclick="enviar()">Cadastrar Funcionario</button>
         </div>
 
     </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
