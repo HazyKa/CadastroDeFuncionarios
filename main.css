@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(71, 58, 40)
+}
+
+main {
+    background-color: rgb(182, 155, 123);
+}
+
+.identidadeCadastro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(99, 88, 74);
+    padding: 15px;
+}
+
+.identidadeCadastro input{
+    width: 200px;
+}
+
+.identidadeCadastro h1 {
+    font-size: 25px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.padrao {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+
+.padrao p {
+    width: 105px;
+    height: 25px;
+    font-size: 18px;
+    background-color: rgb(129, 111, 84) ;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    text-align: center;
+    padding: 3px;
+    font-weight: bold;
+}
+
+.padrao input {
+    background-color: rgb(192, 179, 162);
+    height: 25px;
+    width: 400px;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 5px;
+    
+}
+
+.enderecoCadastro{
+    border-top: 2px solid rgb(73, 63, 50);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(99, 88, 74);
+    padding: 15px;
+}
+
+.enderecoCadastro h1 {
+    font-size: 25px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.empresaCadastro{
+    border-top: 2px solid rgb(73, 63, 50);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(99, 88, 74);
+    padding: 15px;
+}
+
+.empresaCadastro h1 {
+    font-size: 25px;
+    padding: 5px;
+    font-weight: bold;
+}
