@@ -19,7 +19,7 @@
 
             <div class="padrao">
                 <p>Nome:</p>
-                <input type="text" id="nome">
+                <input type="text" id="nome" pattern="[^0-9]+">
             </div>
 
             <div class="padrao">
@@ -44,22 +44,22 @@
 
             <div class="padrao">
                 <p>Estado:</p>
-                <input type="text" id="estadoCadastro">
+                <input type="text" id="estadoCadastro" pattern="[^0-9]+">
             </div>
 
             <div class="padrao">
                 <p>Cidade:</p>
-                <input type="text" id="cidadeCadastro">
+                <input type="text" id="cidadeCadastro" pattern="[^0-9]+">
             </div>
 
             <div class="padrao">
                 <p>Bairro:</p>
-                <input type="text" id="bairroCadastro">
+                <input type="text" id="bairroCadastro" pattern="[^0-9]+">
             </div>
 
             <div class="padrao">
                 <p>Rua:</p>
-                <input type="text" id="ruaCadastro">
+                <input type="text" id="ruaCadastro" pattern="[^0-9]+">
             </div>
 
         </div>
@@ -70,12 +70,12 @@
 
             <div class="padrao">
                 <p>Supervisor:</p>
-                <input type="text" id="supervisorCadastro">
+                <input type="text" id="supervisorCadastro" pattern="[^0-9]+">
             </div>
 
             <div class="padrao">
                 <p>Setor:</p>
-                <input type="text" id="setorCadastro">
+                <input type="text" id="setorCadastro" pattern="[^0-9]+">
             </div>
 
             <div class="padrao">
@@ -91,7 +91,7 @@
         </div>
 
         <div class="completoCadastro">
-            <button type="submit" id="enviar" onclick="enviar()">Cadastrar Funcionario</button>
+            <button type="submit" id="enviar" onclick="enviar()" >Cadastrar Funcionario</button>
         </div>
 
     </main>

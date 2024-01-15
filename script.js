@@ -19,26 +19,62 @@ const horarioCadastro = document.getElementById("horarioCadastro");
 const salarioCadastro = document.getElementById("salarioCadastro");
 
 
-
 function enviar(){
 
-    if(nomeCadastro.value == "" || 
-        idadeCadastro.value == "" || 
-        cpfCadastro.value == ""  || 
-        telefoneCadastro.value == "" ||
-        estadoCadastro.value == "" ||
-        cidadeCadastro.value == "" ||
-        bairroCadastro.value == "" ||
-        ruaCadastro.value == "" || 
-        supervisorCadastro.value == "" ||
-        setorCadastro.value == "" ||
-        horarioCadastro.value == "" ||
-        salarioCadastro.value == ""
-        ){
-            alert("Preencha todos os campos"); //MUDAR PARA SPAN, APARECER UMA JANELINHA NA TELA
-        } else {
-            adicionarFuncionario();
-        }
+    if(validarCadastro() == true){
+        adicionarFuncionario();
+    }else {
+
+    }
+    
+
+    
+}   
+
+
+
+function validarCadastro(){
+
+    if(!validaTexto(nomeCadastro.value)){
+        alert("Nome preenchido incorretamente!");
+    } else if(idadeCadastro.value < 18 || idadeCadastro.value  > 85){
+        alert("Idade preenchida incorretamente!");
+    } else if (!validaCpf(cpfCadastro.value)){
+        alert("cpf preenchido incorretamnete!");
+    }else if (!validaTelefone(telefoneCadastro.value)){
+        alert("telefone preenchido incorretamente!");
+    }else if (!validaTexto(estadoCadastro.value)){
+        alert("estado preenchido incorretamente!");
+    }else if (!validaTexto(cidadeCadastro.value)){
+        alert("cidade preenchida incorretamente!");
+    }else if (!validaTexto(bairroCadastro.value)){
+        alert("bairro preenchido incorretamente!");
+    }else if (!validaTexto(ruaCadastro.value)){
+        alert("rua preenchida incorretamente!");
+    }else if (!validaTexto(supervisorCadastro.value)){
+        alert("Supervisor preenchido incorretamente!");
+    }else if (!validaTexto(setorCadastro.value)){
+        alert("Setor preenchida incorretamente!");
+    }else{
+        return true;
+    }
+
+}
+
+function validaTexto(texto) { 
+    var padraoTexto = /[A-z]/; 
+    return padraoTexto.test(texto); 
+}
+
+function validaCpf(cpf) {
+    let padraoCpf = /^\d{3}\.?\d{3}\.?\d{3}\-?\d{2}$/;
+    return padraoCpf.test(cpf);
+}
+
+function validaTelefone(telefone) {
+    let padraoTelefone = /^(?:(?:\+|00)?(55)\s?)?(?:\(?([1-9][0-9])\)?\s?)?(?:((?:9\d|[2-9])\d{3})\-?(\d{4}))$/;
+    return padraoTelefone.test(telefone);
+
 }
 
 function adicionarFuncionario() {
@@ -61,3 +97,4 @@ function adicionarFuncionario() {
 
     localStorage.setItem("funcionarios", JSON.stringify(funcionarios));
 }
+
