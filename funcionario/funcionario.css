@@ -98,10 +98,10 @@ main {
 
 .areaColaboradores h1 {
     height: 20%;
-    font-size: 40px;
+    font-size: 50px;
     display: flex;
     align-items: center;
-    margin-left: 5%;
+    padding: 20px;
     color: white;
 }
 
@@ -138,4 +138,60 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+}
+
+.areaColaboradores h2 {
+    font-size: 22px;
+    padding-left: 20PX;
+}
+
+#nomeColaborador {
+    font-size: 30px;
+}
+
+.colaborador {
+    padding: 25px;
+    display: flex;
+    height: 75%;
+    justify-content: space-between;
+}
+
+.identidade {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30%;
+    font-weight: bold;
+    border-right: 2px solid rgb(65, 55, 42);
+}
+
+.identidade h3{
+    margin-bottom: 25px;
+    font-size: 25px;
+}
+
+.identidade p {
+    margin-top: 15px;
+    color: white;
+}
+
+.padrao {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30%;
+    font-weight: bold;
+    border-right: 2px solid rgb(65, 55, 42);
+}
+
+.padrao p{
+    color: white;
+}
+
+.padrao h3 {
+    margin-bottom: 25px;
+    font-size: 25px;
+}
+
+.titulo {
 }
