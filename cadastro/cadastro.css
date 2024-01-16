@@ -14,23 +14,31 @@ input[type=number]::-webkit-outer-spin-button {
 header{
     padding: 20px;
     text-align: center;
-    background-color: rgb(71, 58, 40)
+    background-color: rgb(78, 68, 53);
 }
 
 main {
-    background-color: rgb(182, 155, 123);
+    background-color: rgb(247, 229, 208);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main div {
+    margin: 5px;
 }
 
 .identidadeCadastro {
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: rgb(99, 88, 74);
     padding: 15px;
-}
-
-.identidadeCadastro input{
-    width: 200px;
+    border-radius: 30px;
+    width: 40%;
+    border: solid 3px rgb(77, 59, 36);
 }
 
 .identidadeCadastro h1 {
@@ -40,7 +48,7 @@ main {
 }
 
 .padrao {
-    width: 400px;
+    width: 80%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -62,7 +70,7 @@ main {
 .padrao input {
     background-color: rgb(192, 179, 162);
     height: 25px;
-    width: 400px;
+    width: 100%;
     border: none;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -77,6 +85,9 @@ main {
     align-items: center;
     background-color: rgb(99, 88, 74);
     padding: 15px;
+    border-radius: 30px;
+    width: 40%;
+    border: solid 3px rgb(77, 59, 36);
 }
 
 .enderecoCadastro h1 {
@@ -92,6 +103,9 @@ main {
     align-items: center;
     background-color: rgb(99, 88, 74);
     padding: 15px;
+    border-radius: 30px;
+    width: 40%;
+    border: solid 3px rgb(77, 59, 36);
 }
 
 .empresaCadastro h1 {
@@ -101,12 +115,7 @@ main {
 }
 
 .completoCadastro {
-    border-top: 2px solid rgb(73, 63, 50);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgb(99, 88, 74);
-    padding: 15px;
+    margin: 20px;
 }
 
 .completoCadastro button {
