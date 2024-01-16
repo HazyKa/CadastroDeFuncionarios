@@ -26,9 +26,7 @@ function enviar(){
     }else {
 
     }
-    
 
-    
 }   
 
 
@@ -58,7 +56,6 @@ function validarCadastro(){
     }else{
         return true;
     }
-
 }
 
 function validaTexto(texto) { 
