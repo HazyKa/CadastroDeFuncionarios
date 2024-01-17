@@ -48,7 +48,7 @@ main div {
 }
 
 .padrao {
-    width: 80%;
+    width: 90%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -56,9 +56,9 @@ main div {
 }
 
 .padrao p {
-    width: 105px;
-    height: 25px;
-    font-size: 18px;
+    width: 30%;
+    height: 2%;
+    font-size: 17px;
     background-color: rgb(129, 111, 84) ;
     border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
@@ -69,8 +69,8 @@ main div {
 
 .padrao input {
     background-color: rgb(192, 179, 162);
-    height: 25px;
-    width: 100%;
+    height: 2%;
+    width: 70%;
     border: none;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;

@@ -173,6 +173,8 @@ main {
 .identidade p {
     margin-top: 15px;
     color: white;
+    font-size: 17px;
+    border-bottom: 1px solid rgb(71, 61, 48);
 }
 
 .padrao {
@@ -186,12 +188,11 @@ main {
 
 .padrao p{
     color: white;
+    font-size: 17px;
+    border-bottom: 1px solid rgb(71, 61, 48);
 }
 
 .padrao h3 {
     margin-bottom: 25px;
     font-size: 25px;
-}
-
-.titulo {
 }

@@ -4,6 +4,8 @@ const nomeCadastro = document.getElementById("nome");
 const idadeCadastro = document.getElementById("idade");
 const cpfCadastro = document.getElementById("cpf");
 const telefoneCadastro = document.getElementById("telefone");
+const estadoCVCadastro = document.getElementById("estadoCV");
+
 
 //ENDERECO
 const estadoCadastro = document.getElementById("estadoCadastro");
@@ -37,6 +39,8 @@ function validarCadastro(){
         alert("Nome preenchido incorretamente!");
     } else if(idadeCadastro.value < 18 || idadeCadastro.value  > 85){
         alert("Idade preenchida incorretamente!");
+    }else if (!validaTexto(estadoCVCadastro.value)){
+        alert("Estado Civil preenchido incorretamnete!");
     } else if (!validaCpf(cpfCadastro.value)){
         alert("cpf preenchido incorretamnete!");
     }else if (!validaTelefone(telefoneCadastro.value)){
@@ -83,7 +87,8 @@ function adicionarFuncionario() {
     }
 
     funcionarios.push({nome: nomeCadastro.value, 
-        idade: idadeCadastro.value, 
+        idade: idadeCadastro.value,
+        estadoCV: estadoCVCadastro.value,
         cpf: cpfCadastro.value, 
         telefone: telefoneCadastro.value,
         estado: estadoCadastro.value,
