@@ -20,19 +20,13 @@ const setorCadastro = document.getElementById("setorCadastro");
 const horarioCadastro = document.getElementById("horarioCadastro");
 const salarioCadastro = document.getElementById("salarioCadastro");
 
-
 function enviar(){
-
     if(validarCadastro() == true){
         adicionarFuncionario();
-    }else {
-
+    }else{
+        console.log("preencha corretamente");
     }
-
-}   
-
-
-
+}
 function validarCadastro(){
 
     if(!validaTexto(nomeCadastro.value)){
