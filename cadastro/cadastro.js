@@ -75,12 +75,11 @@ function validaCpf(cpf) {
 function validaTelefone(telefone) {
     let padraoTelefone = /^(?:(?:\+|00)?(55)\s?)?(?:\(?([1-9][0-9])\)?\s?)?(?:((?:9\d|[2-9])\d{3})\-?(\d{4}))$/;
     return padraoTelefone.test(telefone);
-
 }
 
-function adicionarFuncionario() {
+let funcionarios = [];
 
-    let funcionarios = [];
+function adicionarFuncionario() {
 
     if(localStorage.hasOwnProperty("funcionarios")){
         funcionarios = JSON.parse(localStorage.getItem("funcionarios"));
@@ -99,4 +98,5 @@ function adicionarFuncionario() {
 
     localStorage.setItem("funcionarios", JSON.stringify(funcionarios));
 }
+
 
