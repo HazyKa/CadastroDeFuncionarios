@@ -87,7 +87,11 @@ function adicionarFuncionario() {
         estado: estadoCadastro.value,
         cidade: cidadeCadastro.value,
         bairro: bairroCadastro.value,
-        rua: ruaCadastro.value
+        rua: ruaCadastro.value,
+        supervisor: supervisorCadastro.value,
+        setor: setorCadastro.value,
+        horario: horarioCadastro.value,
+        salario: salarioCadastro.salarioCadastro
     });
 
     localStorage.setItem("funcionarios", JSON.stringify(funcionarios));
