@@ -198,3 +198,8 @@ main {
     margin-bottom: 25px;
     font-size: 25px;
 }
+
+.editarPessoa {
+    padding: 10px;
+    cursor: pointer;
+}

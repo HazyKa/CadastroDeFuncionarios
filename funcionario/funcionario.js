@@ -119,7 +119,14 @@ document.addEventListener("DOMContentLoaded", function () {
   };
 
   let col = document.getElementById("colaboradores")
-  col.addEventListener("click", atualizarLista);
+  col.addEventListener("click", teste);
+
+  function teste(){
+    for (let i = 0; i < funcionarios.length; i++) {
+
+      adicionarPessoa(funcionarios[i].nome, i);
+    }
+  }
 
 });
 
