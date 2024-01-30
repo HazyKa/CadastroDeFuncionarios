@@ -59,17 +59,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const todosColaboradores = document.getElementById("todosColaboradores");
 
+
+
+const colaboradoresTitulo = document.getElementById("colaboradoresTitulo");
   function editarPessoa(idPessoaClicada) {
 
     let seletorArray = parseInt(idPessoaClicada);
     todosColaboradores.innerHTML = "";
     console.log(seletorArray)
 
+    colaboradoresTitulo.textContent = "Colaborador: ";
 
     todosColaboradores.innerHTML = `
         <div class="areaColaboradores">
 
-        <h1>Colaborador:</h1>
         <h2 id="nomeColaborador">${funcionarios[idPessoaClicada].nome}</h2>
         
         <div class="colaborador">
