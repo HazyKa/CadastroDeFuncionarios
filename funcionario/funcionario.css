@@ -152,6 +152,17 @@ main {
     font-weight: bold;
 }
 
+.nomeEdit{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nomeEdit a{
+    padding: 25px;
+    font-size: 18px;
+}
+
 .colaborador {
     padding: 25px;
     display: flex;

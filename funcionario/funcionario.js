@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
     nomeElement.textContent = nome;
 
     const editarLink = document.createElement("a");
-    editarLink.textContent = "🖊️";
+    editarLink.textContent = "👁️‍🗨️";
     editarLink.id = "editarPessoa";
     editarLink.classList.add("editarPessoa");
 
@@ -57,12 +57,11 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
 
-  const todosColaboradores = document.getElementById("todosColaboradores");
+ const todosColaboradores = document.getElementById("todosColaboradores");
 
+ const colaboradoresTitulo = document.getElementById("colaboradoresTitulo");
 
-
-const colaboradoresTitulo = document.getElementById("colaboradoresTitulo");
-  function editarPessoa(idPessoaClicada) {
+ function editarPessoa(idPessoaClicada) {
 
     let seletorArray = parseInt(idPessoaClicada);
     todosColaboradores.innerHTML = "";
@@ -73,7 +72,10 @@ const colaboradoresTitulo = document.getElementById("colaboradoresTitulo");
     todosColaboradores.innerHTML = `
         <div class="areaColaboradores">
 
-        <h2 id="nomeColaborador">${funcionarios[idPessoaClicada].nome}</h2>
+        <div class="nomeEdit">
+          <h2 id="nomeColaborador">${funcionarios[idPessoaClicada].nome}</h2>
+          <button id="">Editar Funcionario</button>
+        </div>
         
         <div class="colaborador">
 
@@ -111,9 +113,7 @@ const colaboradoresTitulo = document.getElementById("colaboradoresTitulo");
       </div>
       `;
 
-  }
-
-
+ }
 
   //BOTAO AREA BUSCA
 
@@ -121,7 +121,9 @@ const colaboradoresTitulo = document.getElementById("colaboradoresTitulo");
     window.location.href = 'http://127.0.0.1:5500/cadastro/cadastro.html'
   };
 
-  let col = document.getElementById("colaboradores")
+
+
+  let col = document.getElementById("colaboradores");
   col.addEventListener("click", teste);
 
   function teste(){
@@ -131,6 +133,13 @@ const colaboradoresTitulo = document.getElementById("colaboradoresTitulo");
     }
   }
 
+
+  let deletar = document.getElementById("deletar");
+  deletar.addEventListener("click", deletarFuncionario);
+
+  function deletarFuncionario() {
+    
+  }
+
+
 });
-
-

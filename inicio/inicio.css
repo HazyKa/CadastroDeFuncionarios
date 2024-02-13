@@ -52,7 +52,7 @@ main {
     background-color: rgb(129, 111, 84);
     color: white;
     border-radius: 7px;
-    border: 2px solid rgb(77, 59, 36);
+    border: 2px solid rgb(77, 59, 36);  
     list-style: none;
     text-decoration: none;
     text-align: center;
@@ -60,7 +60,7 @@ main {
 }
 
 .opcao a:hover{
-    border: 2.3px solid #530180;
-    background-color: #9453b1;
+    border: 2.3px solid rgb(77, 59, 36);
+    background-color: rgb(100, 81, 57);
     transition: 0.7s;
 }
