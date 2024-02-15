@@ -215,3 +215,25 @@ main {
     padding: 10px;
     cursor: pointer;
 }
+
+.btnEditar {
+    font-size: 12px;
+    border-radius: 10px;
+    background-color:  rgb(156, 132, 103);
+    border: 0.5px solid rgb(71, 61, 48);
+    padding: 10px;
+    font-weight: bold;
+}
+.btnDeletar {
+    font-size: 12px;
+    border-radius: 10px;
+    background-color:  rgb(156, 132, 103);
+    border: 0.5px solid rgb(71, 61, 48);
+    padding: 10px;
+    font-weight: bold;
+}
+
+.bntDetalhes button:hover {
+    background-color: rgb(119, 96, 70);
+    transition: 0.5s;
+}

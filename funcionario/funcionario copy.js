@@ -2,102 +2,39 @@ document.addEventListener("DOMContentLoaded", carregarPagina);
 const funcionariosArmazenados = JSON.parse(localStorage.getItem("funcionarios"));
 
 class GerenciadorFuncionarios {
-  atualizarLista() {
-    for (let i = 0; i < funcionariosArmazenados.length; i++) {
-      this.mostrarFuncionarios(funcionariosArmazenados[i].nome, i);
-    }
+  constructor(){
+    this.ladoEsquerdo = document.getElementById("ladoEsquerdo");
+    this.ladoDireito = document.getElementById("ladoDireito");
+    this.todosColaboradores = document.getElementById("todosColaboradores");
+    this.detalhesColaborador = document.getElementById("detalhesColaborador");
+  
+    this.mostrarFuncionarios();
   }
 
-  limparColaborador(){
-    const todosColaboradores = document.getElementById("todosColaboradores");
-    todosColaboradores.style.display = "none";
+  mostrarFuncionarios(){
+    this.limparCampo();
+
+    this.criarFuncionario(tag, classe, id, texto);
   }
 
-  limparDados(){
-    const todosColaboradores = document.getElementById("todosColaboradores");
-    todosColaboradores.style.display = "flex";
-    const detalhesColaborador = document.getElementById("detalhesColaborador");
-    detalhesColaborador.style.display = "none";
+  criarFuncionario(tag, classe, id, texto){
+    const funcionario = document.createElement(tag);
   }
 
-  mostrarFuncionarios(nome, id) {
-    const pessoaDiv = document.createElement("div");
-    pessoaDiv.classList.add("pessoa");
-    pessoaDiv.id = id;
+  dadosFuncionario(){
 
-    const nomeElement = document.createElement("h3");
-    nomeElement.textContent = nome;
-
-    const editarLink = document.createElement("a");
-    editarLink.textContent = "👁️‍🗨️";
-    editarLink.id = "editarPessoa";
-    editarLink.classList.add("editarPessoa");
-    editarLink.addEventListener("click", () => this.dadosFuncionario(id));
-
-    pessoaDiv.appendChild(nomeElement);
-    pessoaDiv.appendChild(editarLink);
-
-    const pessoasEsquerda = ladoEsquerdo.querySelectorAll(".pessoa").length;
-
-    if (pessoasEsquerda < 5) {
-      ladoEsquerdo.appendChild(pessoaDiv);
-    } else {
-      ladoDireito.appendChild(pessoaDiv);
-    }
   }
 
-  dadosFuncionario(id) {
-    let idPessoa = id;
-    this.limparColaborador();
+  editarFuncionario(){
 
-    const detalhesColaborador = document.getElementById("detalhesColaborador");
-    detalhesColaborador.innerHTML = `
-    <div class="areaColaboradores">
+  }
 
-    <div class="nomeEdit">
-      <h2 id="nomeColaborador">${funcionariosArmazenados[id].nome}</h2>
+  deletarFuncionario(){
 
-      <div class="bntDetalhes">
-        <button id="btnEditar" class="btnEditar">Editar Funcionario</button>
-        <button id="btnDeletar" class="btnDeletar">Deletar Funcionario</button>
-      </div>
-    </div>
-    
-    <div class="colaborador">
+  }
 
-        <div class="identidade">
+  limparCampo(){
 
-            <div class="titulo">
-                <h3>Identidade</h3>
-            </div>
-            <p>Idade: ${funcionariosArmazenados[id].idade}</p>
-            <p>Estado Civil: ${funcionariosArmazenados[id].estadoCV}</p>
-            <p>Telefone: ${funcionariosArmazenados[id].telefone}</p>
-            <p>CPF: ${funcionariosArmazenados[id].cpf}</p>
-        </div>
-        
-        <div class="padrao">
-            <div class="titulo">
-                <h3>Endereco</h3>
-            </div>
-            <p>Estado: ${funcionariosArmazenados[id].estado}</p>
-            <p>Cidade: ${funcionariosArmazenados[id].cidade}</p>
-            <p>Bairro: ${funcionariosArmazenados[id].bairro}</p>
-            <p>Rua: ${funcionariosArmazenados[id].rua}</p>
-        </div>
-
-        <div class="padrao">
-            <div class="titulo">
-                <h3>Empresa</h3>
-            </div>
-            <p>Supervisor: ${funcionariosArmazenados[id].supervisor}</p>
-            <p>Setor: ${funcionariosArmazenados[id].setor}</p>
-            <p>Horario: ${funcionariosArmazenados[id].horario}</p>
-            <p>Salario: ${funcionariosArmazenados[id].salario}</p>
-        </div>
-    </div>
-  </div>
-  `;
   }
 }
 

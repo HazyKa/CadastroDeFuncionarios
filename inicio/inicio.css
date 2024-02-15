@@ -17,7 +17,7 @@ main {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-color: rgb(99, 88, 74);
+    background-color: rgb(110, 101, 89);
     height: 70%;
     width: 30%;
     border-radius: 50px;
@@ -49,7 +49,7 @@ main {
     margin: 15px;
     padding: 5px;
     display: block;
-    background-color: rgb(129, 111, 84);
+    background-color: rgb(133, 117, 93);
     color: white;
     border-radius: 7px;
     border: 2px solid rgb(77, 59, 36);  
